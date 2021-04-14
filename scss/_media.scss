@@ -1,0 +1,49 @@
+@media screen and (max-width: 900px) {
+    .main {
+        &__slider {
+            min-width: 450px;
+        }
+        &__title {
+            font-size: 40px;
+            line-height: 60px;
+            max-width: 475px;
+        }
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .main {
+        &__slider {
+            display: none; 
+        }
+        &__side-bar {
+            display: flex;
+            justify-content: flex-end;
+            background-image: url(../img/main_photo.jpg);
+            flex-direction: column;
+            width: 50%;
+            &__list {
+                display: none;
+            }
+        }
+        
+    }
+    .header {
+        &__container {
+            padding-right: 14.5%;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main {
+        &__title {
+            left: 4%;
+            font-size: 28px;
+            line-height: 40px;
+            max-width: 340px;
+            bottom: 50%;
+            transform: translateY(50%);
+        }
+    }
+}
