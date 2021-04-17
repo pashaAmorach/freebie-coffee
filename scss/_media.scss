@@ -47,3 +47,50 @@
         }
     }
 }
+
+@media screen and (max-width: 630px) {
+    .coffee-build {
+        &__list {
+            flex-wrap: wrap;
+            &__item {
+                display: flex;
+                max-width: 90px;
+            }
+        }
+    }
+    .section {
+            &__first-title {
+                font-size: 15px;
+                line-height: 20px;
+            }
+            &__second-title {
+                font-size: 20px;
+                line-height: 30px;
+                padding-bottom: 60px;
+            }
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .coffee-build {
+        &__list {
+            &__item {
+                display: flex;
+                max-width: 100%;
+                width: 45%;
+                margin-bottom: 15px;
+            }
+            &__name {
+                font-size: 18px;
+                margin-top: 20px;
+                &__img {
+                    max-width: 50px;
+                    max-height: 50px;
+                }
+                &__dsc {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
