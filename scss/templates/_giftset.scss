@@ -1,0 +1,101 @@
+.giftset {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        width: 75%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: $lightgray;
+        z-index: -1;
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        width: 25%;
+        height: 100%;
+        right: 0;
+        top: 0;
+        background-color: #F9FBFF;
+        z-index: -1;
+    }
+    &__content {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        &__img {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &__info {
+            display: flex;
+            flex-direction: column;
+            background-color: $light;
+            width: 75%;
+            padding: 60px 60px 60px 270px;
+            &__price {
+                font-family: 'Nunito-Light', sans-serif;
+                font-size: 20px;
+                line-height: 24px;
+                font-weight: 600;
+                color: $accentcolor;
+            } 
+            &__title {
+                font-family: 'Nunito-Bold', sans-serif;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 28px;
+                color: #232C38;
+                margin-bottom: 15px;
+                margin-top: 16px;
+            }
+            &__dsc {
+                font-family: 'Nunito-Light', sans-serif;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 22px;
+                color: $darkgray;
+            }
+            &__character {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin-top: 24px;
+                margin-bottom: 46px;
+                &__item {
+                    display: flex;
+                    width: 45%;
+                    align-items: center;
+                }
+                &__img {
+                    min-width: 26px;
+                    min-height: 26px;
+                    margin-right: 16px;
+                }
+                &__dsc {
+                    display: flex;
+                    flex-direction: column;
+                    &__title {
+                        font-family: 'Nunito-Light', sans-serif;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: $primarycolor;
+                    }
+                    &__value {
+                        font-family: 'Nunito-Bold', sans-serif;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: $primarycolor;
+                    } 
+
+                }
+            }
+        }
+    }
+}
