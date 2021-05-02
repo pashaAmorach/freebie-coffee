@@ -8,7 +8,7 @@
         left: 0;
         top: 0;
         background-color: $lightgray;
-        z-index: -1;
+        z-index: -2;
     }
     &::after {
         position: absolute;
@@ -18,7 +18,7 @@
         right: 0;
         top: 0;
         background-color: #F9FBFF;
-        z-index: -1;
+        z-index: -2;
     }
     &__content {
         width: 100%;
@@ -72,9 +72,13 @@
                     align-items: center;
                 }
                 &__img {
+                    width: 26px;
+                    height: 26px;
+                    margin-right: 16px;
                     min-width: 26px;
                     min-height: 26px;
-                    margin-right: 16px;
+                    max-height: 26px;
+                    max-width: 26px;
                 }
                 &__dsc {
                     display: flex;
