@@ -600,6 +600,108 @@ img {
   color: #415167;
 }
 
+.personalized-coffee {
+  position: relative;
+}
+
+.personalized-coffee::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 75%;
+  height: 100%;
+  background-color: #F9FBFF;
+  z-index: -1;
+}
+
+.personalized-coffee::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 25%;
+  height: 100%;
+  background-color: #415167;
+  z-index: -1;
+}
+
+.personalized-coffee__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.personalized-coffee__list__item {
+  width: 31%;
+  max-width: 360px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.personalized-coffee__list__item:hover {
+  -webkit-box-shadow: 0px 0px 35px 0px rgba(34, 60, 80, 0.2);
+          box-shadow: 0px 0px 35px 0px rgba(34, 60, 80, 0.2);
+}
+
+.personalized-coffee__list__info-block {
+  margin-top: -5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 36px;
+  background-color: #FFFFFF;
+}
+
+.personalized-coffee__list__info-block__price__current {
+  font-family: 'Nunito-Light', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #C7A17A;
+  margin-right: 20px;
+}
+
+.personalized-coffee__list__info-block__price__previous {
+  font-family: 'Nunito-LightItalic', sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 300;
+  color: #415167;
+  text-decoration: line-through;
+}
+
+.personalized-coffee__list__info-block__title {
+  font-family: 'Nunito-Bold', sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #232C38;
+  margin: 10px 0;
+}
+
+.personalized-coffee__list__info-block__dsc {
+  font-family: 'Nunito-Light', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 22px;
+  color: #151D28;
+}
+
+.personalized-coffee__list__info-block .section__btns {
+  margin-top: 32px;
+}
+
 @media screen and (max-width: 1130px) {
   .choose-favorite__info-block__title {
     font-size: 15px;
