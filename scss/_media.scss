@@ -196,16 +196,41 @@
             }
         }
     }
+
+    .personalized-coffee {
+        &__list {
+            &__info-block {
+                padding: 15px;
+                &__title {
+                    font-size: 21px;
+                    line-height: 24px;
+                }
+                &__price {
+                    &__current {
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+                    &__previous {
+                        font-size: 12px;
+                        line-height: 16px;
+                    }
+                }
+                &__dsc {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 750px) {
     .section {
         &__second-title {
-            font-size: 15px;
-            line-height: 15px;
+            color: $accentcolor;
         }
         &__first-title {
-            font-size: 10px;
+
         }
     }
     .choose-favorite {
@@ -249,12 +274,9 @@
     }
     .section {
             &__first-title {
-                font-size: 8px;
-                line-height: 15px;
+                
             }
             &__second-title {
-                font-size: 11px;
-                line-height: 12px;
                 padding-bottom: 60px;
             }
     }
@@ -287,6 +309,19 @@
         &__content {
             &__img {
                 top: -90px;
+            }
+        }
+    }
+
+    .personalized-coffee {
+        &__list {
+            flex-direction: column;
+            align-items: center;
+            &__item {
+                width: 300px;
+                &:not(&:last-of-type) {
+                    margin-bottom: 20px;
+                }
             }
         }
     }
@@ -344,6 +379,14 @@
             }
         }
     }
+
+    .personalized-coffee {
+        &__list {
+            &__item {
+                width: 240px;
+            }
+        }
+    }
 }
 
 
@@ -373,12 +416,11 @@
     }
     .section {
         &__first-title {
-            font-size: 6px;
+            font-size: 10px;
         }
         &__second-title {
-            font-size: 10px;
-            line-height: 8px;
-            color: $accentcolor;
+            font-size: 14px;
+            line-height: 12px;
         }
     }
 }

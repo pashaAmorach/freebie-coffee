@@ -1,0 +1,14 @@
+.footer {
+    background-color: $lightgray;
+    width: 100%;
+    padding: 18px 0;
+    text-transform: capitalize;
+    text-align: center;
+    &__copyright {
+        font-family: 'Nunito-LightItalic', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        color: $primarycolor;
+    }
+}
